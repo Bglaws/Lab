@@ -1,0 +1,21 @@
+mkdir Lab2
+cd Lab2/
+svnadmin create newRepo
+mkdir WorkingCopy
+cd WorkingCopy/
+svn checkout file:///mnt/c/Users/Carol/eclipse-workspace/Labs/Lab2/newRepo/
+ls
+cd newRepo/
+ls
+ll
+svn add work.txt
+vim work.text
+svn add work.text
+	(this command gave me an error,
+	 I thought you had to add the changes
+	 you wanted to commit like in git)
+ 
+vn commit -m "created work.text"
+vim work.text
+svn add work.text
+svn commit -m "updated work.text"
